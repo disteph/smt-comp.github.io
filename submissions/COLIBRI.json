@@ -16,6 +16,6 @@
         {
             "tracks": ["SingleQuery"],
             "logics": "QF_.*FP.*"
-        },
+        }
     ]
 }
