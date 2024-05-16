@@ -1,0 +1,29 @@
+{
+    "name": "yicesQS",
+    "contributors": [
+        "Stephane Graham-Lengrand",
+    ],
+    "contacts": ["Stephane Graham-Lengrand <stephane.graham-lengrand@csl.sri.com>"],
+    "archive": {
+        "url": "http://example.com/solver.tar.gz",
+        "h": { "sha256": "012345" }
+    },
+    "website": "https://github.com/disteph/yicesQS",
+    "system_description": "https://www.csl.sri.com/users/sgl/Work/Reports/2024-yicesQS.pdf",
+    "command": ["relative_cmd", "default_command_line"],
+    "solver_type": "Standalone",
+    "participations": [
+        { "tracks": ["SingleQuery"], "divisions": ["Equality"] },
+        {
+            "tracks": ["SingleQuery"],
+            "logics": "QF_.*LRA.*",
+            "command": ["relative_cmd", "other_option"]
+        },
+        {
+            "tracks": ["SingleQuery"],
+            "logics": ["LIA"],
+            "archive": { "url": "http://example.com/solver_lia.tar.gz" },
+            "command": ["relative_cmd", "--super-lia"]
+        }
+    ]
+}
